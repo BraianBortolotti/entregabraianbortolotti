@@ -1,0 +1,196 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+body {
+    font-family: 'Smooch Sans', sans-serif;
+    background-color: aliceblue;
+}
+/* header div h2 {
+    background-color: aliceblue;
+    padding: 30px;
+
+     
+} */
+
+ header nav {
+     width: 100%;
+     background-color:cornflowerblue;
+     height: 30px;
+     padding-top: 10px;
+}
+header nav ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+header nav ul li {
+    font-size: 15px;
+    list-style: none;
+}
+.menu {
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    padding: 4px;
+    border-radius: 3px;
+}
+.menu:hover {
+    background-color: rgb(48, 80, 156);
+    transition: 0.5s;
+    box-shadow: 1px 1px black;
+}
+
+
+#grilla {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-areas:"servicio"
+                        "paloma"
+                        "mosquito"
+                        "tanque"
+                        "plagas"
+                        "ambientes"
+                        "bacterias"
+                        "conocenos"
+                        "footer";
+}
+.servicio {
+    grid-area: servicio;
+    text-align: center;
+    background-color:cornflowerblue;
+}
+.servicio-imagen {
+    width: 100%;
+}
+.paloma {
+    margin-top: 10px;
+    grid-area: paloma;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: radial-gradient(rgba(133, 133, 133, 0.5), rgba(133, 133, 133, 0.5)),url(../assest/fumigacion1.jpg);
+    background-size:cover;
+}
+.mosquito {
+    grid-area: mosquito;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image:radial-gradient(rgba(133, 133, 133, 0.5), rgba(133, 133, 133, 0.5)), url(../assest/fumigacion.jpg);
+    background-size: cover;
+
+}
+.tanque {
+    grid-area: tanque;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image:radial-gradient(rgba(133, 133, 133, 0.5), rgba(133, 133, 133, 0.5)), url(../assest/fumigacion6.jpg);
+    background-size: cover;
+}
+
+.plagas {
+    grid-area: plagas;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image:radial-gradient(rgba(133, 133, 133, 0.5), rgba(133, 133, 133, 0.5)), url(../assest/fumigacion3.jpg);
+    background-size: cover;
+}
+.ambientes {
+    grid-area: ambientes;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: radial-gradient(rgba(133, 133, 133, 0.5), rgba(133, 133, 133, 0.5)),url(../assest/fumigacion4.jpg);
+    background-size: cover;
+    
+}
+.bacterias {
+    grid-area: bacterias;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: radial-gradient(rgba(133, 133, 133, 0.5), rgba(133, 133, 133, 0.5)),url(../assest/fumigacion5.jpg);
+    background-size: cover;
+}
+.conocenos {
+    grid-area: conocenos;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer {
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.imagenes {
+    width: 100px;
+    border-radius: 100%;
+    padding: 15px;
+}
+.parrafo {
+    text-align: center;
+    padding: 20px;
+}
+.redes {
+    width: 30px;
+    padding: 20px;
+}
+
+@media only screen and (min-width:1024px) {
+    #grilla {
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:"servicio servicio servicio"
+                            "paloma mosquito tanque"
+                            "plagas ambientes bacterias"
+                            "conocenos conocenos conocenos"
+                            "footer footer footer";
+    }
+    header div h2 {
+        font-size: 60px;
+    }
+    header nav {
+        padding-bottom: 15px;
+    }
+    header nav ul li {
+        font-size: 30px;
+    }
+    .servicio {
+        font-size: 45px;
+        padding-bottom: 15px;
+    }
+    .paloma {
+        margin-top: 0%;
+    }
+    .parrafo {
+        font-size: 40px;
+    }
+    .imagenes{ 
+        width: 150px;
+        padding-bottom: 20px;
+        transition: 2s;
+    }
+    .imagenes:hover{
+        transform: scale(1.2);
+
+    }
+    .conocenos {
+        background-color: cornflowerblue;
+    }
+    .redes {
+        width: 45px;
+        transition: 2s;
+    }
+    .redes:hover{
+        transform: scale(1.2);
+      
+
+    }
+
+}
