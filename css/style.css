@@ -6,12 +6,12 @@ body {
     font-family: 'Smooch Sans', sans-serif;
     background-color: aliceblue;
 }
-/* header div h2 {
+header div h2 {
     background-color: aliceblue;
     padding: 30px;
 
      
-} */
+}
 
  header nav {
      width: 100%;
